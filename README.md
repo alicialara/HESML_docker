@@ -12,7 +12,7 @@
 ## How to run the experiments
 
 1. Download the Dockerfile from this directory
-2. Save the file in an empty directory, open a terminal and compile the image (up to 10 minutes):
+2. Save the file in an empty directory (see the Section "Files structure"), open a terminal and compile the image (up to 10 minutes). The image created will contain both the raw and post-processed results for the experiments.
 ```sh
 [sudo] docker build --no-cache -t hesml_test .
 ```
@@ -20,7 +20,7 @@
 ```sh
 [sudo] docker create -it --name "hesml_test" hesml_test:latest
 ```
-4. Copy the raw and processed output files into the directory
+4. Copy the raw and processed output files into the host directory.
 
 ```sh
 [sudo] docker cp hesml_test:/home/user/HESML/HESML/HESML_Library/ReproducibleExperiments/BioSentenceSimilarity_paper/BioSentenceSimFinalProcessedOutputFiles .
@@ -28,6 +28,21 @@
 ```sh
 [sudo] docker cp hesml_test:/home/user/HESML/HESML/HESML_Library/ReproducibleExperiments/BioSentenceSimilarity_paper/BioSentenceSimFinalRawOutputFiles .
 ```
+
+## Files structure (with results)
+
+.
+├── BioSentenceSimFinalProcessedOutputFiles
+│   ├── table_allMetrics.csv
+│   └── table_allMetrics_rounded.csv
+│   └── table_allMetrics_experiment.tex
+|
+├── BioSentenceSimFinalRawOutputFiles
+│   ├── raw_similarity_BIOSSES.csv
+│   ├── raw_similarity_CTR.csv
+│   └── raw_similarity_MedSTSFull.csv
+|
+└── Dockerfile
 
 ## Pending features 
 
