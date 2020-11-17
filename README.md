@@ -11,8 +11,14 @@
 > Requisites: **Docker installed in an operating system**
 ## How to run the experiments
 
-1. Download the Dockerfile from this directory
-2. Save the file in an empty directory (see the Section "Files structure"), open a terminal and compile the image (up to 10 minutes). The image created will contain both the raw and post-processed results for the experiments.
+1. Clone this repo
+```sh
+git clone https://github.com/alicialara/HESML_docker.git
+```
+```sh
+cd HESML_docker
+```
+2. Compile the image (up to 10 minutes). The image created will contain both the raw and post-processed results for the experiments.
 ```sh
 [sudo] docker build --no-cache -t hesml_test .
 ```
