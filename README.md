@@ -8,7 +8,7 @@
 	- R script for post-processing results. Output in .csv and .latex formats.
 
 
-> Requisites: **Docker installed in an operating system**
+> Requisites: **Docker**
 ## How to run the experiments
 
 1. Clone this repo
