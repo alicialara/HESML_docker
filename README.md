@@ -31,16 +31,8 @@
 
 ## Files structure (with results)
 
-.
-├── BioSentenceSimFinalProcessedOutputFiles
-│   ├── table_allMetrics.csv
-│   └── table_allMetrics_rounded.csv
-│   └── table_allMetrics_experiment.tex
-├── BioSentenceSimFinalRawOutputFiles
-│   ├── raw_similarity_BIOSSES.csv
-│   ├── raw_similarity_CTR.csv
-│   └── raw_similarity_MedSTSFull.csv
-└── Dockerfile
+![Docker tree structure](https://github.com/alicialara/HESML_docker/blob/main/treestruc.png)
+
 
 ## Pending features 
 
