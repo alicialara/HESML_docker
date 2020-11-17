@@ -36,12 +36,10 @@
 │   ├── table_allMetrics.csv
 │   └── table_allMetrics_rounded.csv
 │   └── table_allMetrics_experiment.tex
-|
 ├── BioSentenceSimFinalRawOutputFiles
 │   ├── raw_similarity_BIOSSES.csv
 │   ├── raw_similarity_CTR.csv
 │   └── raw_similarity_MedSTSFull.csv
-|
 └── Dockerfile
 
 ## Pending features 
